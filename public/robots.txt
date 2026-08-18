@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://daghanlastik.com/sitemap.xml

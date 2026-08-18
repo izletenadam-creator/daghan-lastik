@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>Dağhan Lastik - Yorum QR Baskı</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700;800&display=swap');
+        
+        body {
+            font-family: 'Outfit', sans-serif;
+            background-color: #f1f5f9;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .poster {
+            background: white;
+            width: 210mm; /* A4 width */
+            height: 297mm; /* A4 height */
+            padding: 40px;
+            box-sizing: border-box;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        /* Top decoration */
+        .poster::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 15px;
+            background: #eab308;
+        }
+
+        .logo {
+            font-size: 3.5rem;
+            font-weight: 800;
+            color: #0f172a;
+            margin-top: 2rem;
+            margin-bottom: 3rem;
+            letter-spacing: -1px;
+        }
+        
+        .logo span {
+            color: #eab308;
+        }
+
+        h1 {
+            font-size: 4rem;
+            color: #0f172a;
+            margin: 0 0 1rem 0;
+            line-height: 1.1;
+        }
+
+        .subtitle {
+            font-size: 2rem;
+            color: #64748b;
+            margin-bottom: 4rem;
+            max-width: 80%;
+        }
+
+        .qr-wrapper {
+            background: white;
+            padding: 2rem;
+            border-radius: 2rem;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+            border: 4px solid #f8fafc;
+            margin-bottom: 4rem;
+        }
+
+        #qrcode {
+            display: flex;
+            justify-content: center;
+        }
+
+        .stars {
+            font-size: 4rem;
+            color: #eab308;
+            margin-bottom: 1rem;
+            letter-spacing: 10px;
+        }
+
+        .footer-text {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: #0f172a;
+            margin-top: auto;
+            margin-bottom: 2rem;
+        }
+
+        /* Print styles to ensure it looks perfect on paper */
+        @media print {
+            body {
+                background: white;
+                padding: 0;
+            }
+            .poster {
+                box-shadow: none;
+                width: 100%;
+                height: 100%;
+                page-break-after: avoid;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="poster">
+        <div class="logo">DAĞHAN<span>LASTİK</span></div>
+        
+        <h1>Hizmetimizden<br>Memnun Kaldınız mı?</h1>
+        <div class="subtitle">Kameranızı okutarak bize hemen Google üzerinden yorum bırakabilirsiniz.</div>
+
+        <div class="qr-wrapper">
+            <div id="qrcode"></div>
+        </div>
+
+        <div class="stars">★★★★★</div>
+        
+        <div class="footer-text">
+            Yorumlarınız bizim için çok değerli!
+        </div>
+    </div>
+
+    <script>
+        // Generate QR Code for the specific Google Review Link
+        new QRCode(document.getElementById("qrcode"), {
+            text: "https://g.page/r/CXv2SUUUMwPpEAE/review",
+            width: 350,
+            height: 350,
+            colorDark : "#0f172a",
+            colorLight : "#ffffff",
+            correctLevel : QRCode.CorrectLevel.H
+        });
+    </script>
+</body>
+</html>

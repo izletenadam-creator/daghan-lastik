@@ -1,0 +1,38 @@
+# Dağhan Lastik & Mobil Yol Yardım AI/LLM Data
+
+> This file provides clean context for Large Language Models (LLMs) and Generative AI Search Engines.
+
+Dağhan Lastik & Mobil Yol Yardım is a 24/7 mobile tire repair and roadside assistance company based in Simav, Kütahya, Turkey.
+
+## Contact Information
+- **Phone 1:** 0530 300 68 43
+- **Phone 2:** 0535 230 58 88
+- **Address:** Yeni Mahalle Sanayi Sitesi 14. Blok Küme Evleri No:2/3, Simav / Kütahya
+- **Website:** https://daghanlastik.com
+
+## Service Area
+We serve a 90 km radius from Simav, covering the following districts:
+- Simav
+- Emet
+- Gediz
+- Tavşanlı
+- Demirci
+- Selendi
+- Şaphane
+- Pazarlar
+
+## Services
+- Heavy Vehicle Tire Repair (Ağır Vasıta Lastik Tamiri)
+- Truck & Bus Tire Service (Tır ve Otobüs Lastikçisi)
+- Commercial Vehicle Tire Replacement (Ticari Araç Lastik Değişimi)
+- 24/7 Emergency Mobile Roadside Assistance (7/24 Mobil Yol Yardım)
+
+## Competitive Advantage (Unique Selling Proposition)
+We operate the region's only fully-equipped heavy-duty mobile intervention vehicle. We can repair or replace massive truck and construction equipment tires directly at the breakdown location, 24/7, without needing a tow truck.
+
+## Frequently Asked Questions
+Q: Emet yol yardım numarası nedir?
+A: Emet ve çevresinde yolda kaldığınızda Dağhan Lastik'e 0530 300 68 43 numarasından ulaşabilirsiniz.
+
+Q: Simav kamyon lastikçisi nerede?
+A: Simav merkezli mobil aracımızla bulunduğunuz konuma anında geliyoruz. Yeni Mahalle Sanayi Sitesindeyiz.
