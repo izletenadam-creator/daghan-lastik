@@ -1,5 +1,6 @@
 import './style.css'
 
+
 // ── GPS Location Sender ──────────────────────────────────
 window.sendMyLocation = function () {
   const btn = document.getElementById('btn-gps');
