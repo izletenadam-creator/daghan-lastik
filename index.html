@@ -31,11 +31,54 @@
       "@context": "https://schema.org",
       "@graph": [
         {
-          "@type": "LocalBusiness",
+          "@type": ["LocalBusiness", "AutoRepair"],
           "name": "Dağhan Lastik & Mobil Yol Yardım",
+          "alternateName": "Simav 7/24 Açık Nöbetçi Lastikçi — Hemen Ara",
+          "description": "Simav ve 90 km çevresinde (Emet, Gediz, Demirci, Tavşanlı, Selendi, Şaphane, Pazarlar) tır, kamyon, otobüs ve tüm ticari araçlar için 7/24 açık nöbetçi lastikçi ve mobil yol yardım hizmeti. Bölgenin tek tam donanımlı ağır vasıta müdahale aracı.",
           "image": "https://daghanlastik.com/hero-bg.jpeg",
           "url": "https://daghanlastik.com",
-          "telephone": ["+905303006843", "+905352305888"],
+          "telephone": "+905303006843",
+          "contactPoint": [
+            {
+              "@type": "ContactPoint",
+              "telephone": "+905303006843",
+              "contactType": "customer service",
+              "areaServed": "TR",
+              "availableLanguage": "Turkish",
+              "hoursAvailable": {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+                "opens": "00:00",
+                "closes": "23:59"
+              }
+            },
+            {
+              "@type": "ContactPoint",
+              "telephone": "+905352305888",
+              "contactType": "emergency",
+              "areaServed": "TR",
+              "availableLanguage": "Turkish"
+            }
+          ],
+          "hasMap": "https://maps.google.com/?q=Dağhan+Lastik+Simav",
+          "openingHours": [
+            "Mo 00:00-23:59",
+            "Tu 00:00-23:59",
+            "We 00:00-23:59",
+            "Th 00:00-23:59",
+            "Fr 00:00-23:59",
+            "Sa 00:00-23:59",
+            "Su 00:00-23:59"
+          ],
+          "openingHoursSpecification": [
+            {"@type": "OpeningHoursSpecification", "dayOfWeek": "Monday",    "opens": "00:00", "closes": "23:59"},
+            {"@type": "OpeningHoursSpecification", "dayOfWeek": "Tuesday",   "opens": "00:00", "closes": "23:59"},
+            {"@type": "OpeningHoursSpecification", "dayOfWeek": "Wednesday", "opens": "00:00", "closes": "23:59"},
+            {"@type": "OpeningHoursSpecification", "dayOfWeek": "Thursday",  "opens": "00:00", "closes": "23:59"},
+            {"@type": "OpeningHoursSpecification", "dayOfWeek": "Friday",    "opens": "00:00", "closes": "23:59"},
+            {"@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday",  "opens": "00:00", "closes": "23:59"},
+            {"@type": "OpeningHoursSpecification", "dayOfWeek": "Sunday",    "opens": "00:00", "closes": "23:59"}
+          ],
           "address": {
             "@type": "PostalAddress",
             "streetAddress": "Yeni Mahalle Sanayi Sitesi 14. Blok Küme Evleri No:2/3",
@@ -60,12 +103,8 @@
             {"@type": "City", "name": "Pazarlar"}
           ],
           "priceRange": "₺₺",
-          "openingHoursSpecification": {
-            "@type": "OpeningHoursSpecification",
-            "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
-            "opens": "00:00",
-            "closes": "23:59"
-          }
+          "paymentAccepted": "Cash, Credit Card",
+          "currenciesAccepted": "TRY"
         },
         {
           "@type": "FAQPage",
